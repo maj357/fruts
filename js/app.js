@@ -230,7 +230,7 @@ if (document.querySelector('.slider__sw')) {
 		observer: true,
 		observeParents: true,
 		slidesPerView: 1,
-		freeMode: true,
+		// freeMode: true, свободный режим
 		watchOverflow: false,
 		autoplay: {
 			delay: 5000,
@@ -243,10 +243,6 @@ if (document.querySelector('.slider__sw')) {
 			el: '.slider__controls-dotts',
 			clickable: true,
 		},
-		// Arrows
-		navigation: {
-			nextEl: '.slider__controls-arrows .slider-arrow_next',
-		}
 	});
 }
 var ua = window.navigator.userAgent;
