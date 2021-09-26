@@ -3373,7 +3373,7 @@ body.ie ._ibg img {
 
   .info {
     margin-left: 0;
-    width: 70%;
+    width: 80%;
   }
 
   .subscribe .form__error {
@@ -3460,6 +3460,10 @@ body.ie ._ibg img {
     top: -15px;
   }
 
+  .info__decor {
+    left: 70%;
+  }
+
   .advantage__body {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3476,7 +3480,7 @@ body.ie ._ibg img {
   }
 
   .advantage__item:nth-child(even) {
-    margin-left: auto;
+    margin-left: 100px;
   }
 
   .items-fruts__description {
@@ -3522,6 +3526,10 @@ body.ie ._ibg img {
 
   .advantage__item {
     padding-right: calc(10px + 15 * ((100vw - 320px) / 860));
+  }
+
+  .advantage__item:nth-child(even) {
+    margin-left: calc(85px + 15 * ((100vw - 320px) / 860));
   }
 
   .slider__sw {
@@ -3597,24 +3605,6 @@ body.ie ._ibg img {
 }
 
 @media (any-hover: none) {
-  .btn {
-    background-color: #63d22e;
-    -webkit-box-shadow: 1px 1px 8px rgba(89, 190, 41, 0.3);
-            box-shadow: 1px 1px 8px rgba(89, 190, 41, 0.3);
-  }
-
-  .button {
-    background-color: #63d22e;
-    -webkit-box-shadow: 1px 1px 8px rgba(89, 190, 41, 0.3);
-            box-shadow: 1px 1px 8px rgba(89, 190, 41, 0.3);
-  }
-
-  .button {
-    background-color: white;
-    -webkit-box-shadow: 1px 1px 8px rgba(89, 190, 41, 0.3);
-            box-shadow: 1px 1px 8px rgba(89, 190, 41, 0.3);
-  }
-
   .nav__list-link {
     opacity: 1;
   }

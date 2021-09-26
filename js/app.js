@@ -321,7 +321,7 @@ if (iconMenu != null) {
 		if (unlock) {
 			body_lock(delay);
 			iconMenu.classList.toggle("_active");
-			menuBody.classList.toggle("_active");
+			// menuBody.classList.toggle("_active");
 		}
 	});
 };
