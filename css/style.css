@@ -2478,6 +2478,10 @@ body.ie ._ibg img {
 }
 
 @media (min-width: 479.98px) {
+  .swiper-pagination-bullets {
+    display: none;
+  }
+
   .block-fruts__item {
     width: 100%;
     padding-bottom: 28.35%;
@@ -3141,7 +3145,7 @@ body.ie ._ibg img {
 
 @media (max-width: 800px) {
   .info__decor {
-    top: 10%;
+    left: 43%;
   }
 
   .product:not(:last-child) {
@@ -3461,6 +3465,7 @@ body.ie ._ibg img {
   }
 
   .info__decor {
+    top: 10%;
     left: 70%;
   }
 
