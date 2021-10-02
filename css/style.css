@@ -158,6 +158,9 @@ h6 {
 
 body {
   position: relative;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 body._lock {
@@ -299,31 +302,32 @@ body._lock {
 input[type=text],
 input[type=email],
 input[type=tel],
+input[type=password],
 textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
 
-input[type=text]::-webkit-input-placeholder, input[type=email]::-webkit-input-placeholder, input[type=tel]::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+input[type=text]::-webkit-input-placeholder, input[type=email]::-webkit-input-placeholder, input[type=tel]::-webkit-input-placeholder, input[type=password]::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 
-input[type=text]::-moz-placeholder, input[type=email]::-moz-placeholder, input[type=tel]::-moz-placeholder, textarea::-moz-placeholder {
+input[type=text]::-moz-placeholder, input[type=email]::-moz-placeholder, input[type=tel]::-moz-placeholder, input[type=password]::-moz-placeholder, textarea::-moz-placeholder {
   opacity: 1;
   -moz-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 
-input[type=text]:-ms-input-placeholder, input[type=email]:-ms-input-placeholder, input[type=tel]:-ms-input-placeholder, textarea:-ms-input-placeholder {
+input[type=text]:-ms-input-placeholder, input[type=email]:-ms-input-placeholder, input[type=tel]:-ms-input-placeholder, input[type=password]:-ms-input-placeholder, textarea:-ms-input-placeholder {
   opacity: 1;
   -ms-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 
-input[type=text]::-ms-input-placeholder, input[type=email]::-ms-input-placeholder, input[type=tel]::-ms-input-placeholder, textarea::-ms-input-placeholder {
+input[type=text]::-ms-input-placeholder, input[type=email]::-ms-input-placeholder, input[type=tel]::-ms-input-placeholder, input[type=password]::-ms-input-placeholder, textarea::-ms-input-placeholder {
   opacity: 1;
   -ms-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
@@ -332,6 +336,7 @@ input[type=text]::-ms-input-placeholder, input[type=email]::-ms-input-placeholde
 input[type=text]::placeholder,
 input[type=email]::placeholder,
 input[type=tel]::placeholder,
+input[type=password]::placeholder,
 textarea::placeholder {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease;
@@ -342,29 +347,30 @@ textarea::placeholder {
 input[type=text]:focus,
 input[type=email]:focus,
 input[type=tel]:focus,
+input[type=password]:focus,
 textarea:focus {
   outline: transparent;
 }
 
-input[type=text]:focus::-webkit-input-placeholder, input[type=email]:focus::-webkit-input-placeholder, input[type=tel]:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+input[type=text]:focus::-webkit-input-placeholder, input[type=email]:focus::-webkit-input-placeholder, input[type=tel]:focus::-webkit-input-placeholder, input[type=password]:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
   opacity: 0;
 }
 
-input[type=text]:focus::-moz-placeholder, input[type=email]:focus::-moz-placeholder, input[type=tel]:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+input[type=text]:focus::-moz-placeholder, input[type=email]:focus::-moz-placeholder, input[type=tel]:focus::-moz-placeholder, input[type=password]:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
   -moz-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
   opacity: 0;
 }
 
-input[type=text]:focus:-ms-input-placeholder, input[type=email]:focus:-ms-input-placeholder, input[type=tel]:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {
+input[type=text]:focus:-ms-input-placeholder, input[type=email]:focus:-ms-input-placeholder, input[type=tel]:focus:-ms-input-placeholder, input[type=password]:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {
   -ms-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
   opacity: 0;
 }
 
-input[type=text]:focus::-ms-input-placeholder, input[type=email]:focus::-ms-input-placeholder, input[type=tel]:focus::-ms-input-placeholder, textarea:focus::-ms-input-placeholder {
+input[type=text]:focus::-ms-input-placeholder, input[type=email]:focus::-ms-input-placeholder, input[type=tel]:focus::-ms-input-placeholder, input[type=password]:focus::-ms-input-placeholder, textarea:focus::-ms-input-placeholder {
   -ms-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
   opacity: 0;
@@ -373,6 +379,7 @@ input[type=text]:focus::-ms-input-placeholder, input[type=email]:focus::-ms-inpu
 input[type=text]:focus::placeholder,
 input[type=email]:focus::placeholder,
 input[type=tel]:focus::placeholder,
+input[type=password]:focus::placeholder,
 textarea:focus::placeholder {
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
@@ -1462,9 +1469,9 @@ body.ie ._ibg img {
 }
 
 .header._scroll .header__btn {
-  -webkit-transform: scale(0.7);
-      -ms-transform: scale(0.7);
-          transform: scale(0.7);
+  -webkit-transform: translate(0px, 0px) scale(0.7);
+      -ms-transform: translate(0px, 0px) scale(0.7);
+          transform: translate(0px, 0px) scale(0.7);
   top: 0px;
 }
 
@@ -3163,9 +3170,9 @@ body.ie ._ibg img {
     left: 0%;
     top: 23%;
     border-radius: 20px 80px;
-    -webkit-transform: translate(0%, 0px) scale(0.7);
-        -ms-transform: translate(0%, 0px) scale(0.7);
-            transform: translate(0%, 0px) scale(0.7);
+    -webkit-transform: translate(0px, 0px) scale(0.7);
+        -ms-transform: translate(0px, 0px) scale(0.7);
+            transform: translate(0px, 0px) scale(0.7);
   }
 
   .popup__body {
